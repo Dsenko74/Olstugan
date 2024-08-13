@@ -1,0 +1,61 @@
+// Заголовки, загальні БЕМ блоки та інше...
+// Шапка блоку
+.block--header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &__title {
+    position: relative;
+    @include adaptiveValue("font-size", 46, 24, 0, 1200, 375);
+    font-weight: 700;
+    line-height: 121.73913%; /* 56/46 */
+   // z-index: 5;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 21);
+    }
+    &--big {
+      @include adaptiveValue("font-size", 56, 24);
+      line-height: 114.285714%; /* 64/56 */
+      &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 44, 32);
+      }
+      &::before {
+        display: none;
+      }
+    }
+    &:before {
+      content: "";
+      background: url("@img/common/Ellipse 13.svg") 0 0 no-repeat;
+      position: absolute;
+      top: -5px;
+      left: -42px;
+      width: toRem(94);
+      height: toRem(64);
+      //transform: translate(toRem(-42px), toRem(-5px));
+      //transform: translate(toEm(-42, 46), toEm(-5, 46));
+    }
+  }
+
+  &__text {
+    @include adaptiveValue("font-size", 16, 14);
+    font-weight: 400;
+    line-height: 162.5%; /* 26/16 */
+    p {
+      &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 20, 10);
+      }
+    }
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 30);
+    }
+    &--big {
+      @include adaptiveValue("font-size", 20, 18);
+    }
+  }
+  &--big {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="hero">
+					<div class="hero__slider swiper">
+						<div class="hero__wrapper swiper-wrapper">
+							<div class="hero__slide swiper-slide">
+								<img src="@img/hero/01.jpg" alt="image">
+							</div>
+							<div class="hero__slide swiper-slide">
+								<img src="@img/hero/02.jpg" alt="image">
+							</div>
+							<div class="hero__slide swiper-slide">
+								<img src="@img/hero/03.jpg" alt="image">
+							</div>
+						</div>
+					</div>
+					<div class="slide-info">
+						<div class="slide-counter">
+							<span id="current-slide">01</span> 
+							/ 
+							<span id="total-slides">3</span>
+						</div>
+						<div class="slide-bullets"></div>
+					</div>
+					<div data-da=".menu__body, 767.98" class="hero__info">
+						<a href="tel:+46735325763" class="hero__tel">+46 735 325 763</a>
+						<a href="#" class="hero__email">ÖlstuganTullen@gmail.com</a>
+						<a href="#" class="hero__schedule">17:00 - 21:00</a>
+					</div>			
+					<div class="hero__container">
+						<div class="hero__body">
+							<div class="hero__block--header block--header block--header--big">
+
+								<div class="block--header__title block--header__title--big">We are pleased to welcome you to Ölstugan Tullen</div>
+								<h2 class="block--header__text block--header__text--big">
+									<p>Homely restaurant that serves Swedish home cooking and offers a wide range of craft beers. With us there is something for everyone!
+									</p>	
+								</h2>
+								<a href="#" class="block--header__button button button-big">Find your local pub</a>
+							</div> 
+						</div>
+					</div> 
+				</section>
+				<section class="beer">
+					<div class="beer__container">
+						<div class="beer__block--header block--header">
+								<div class="block--header__title">Swedish beer & cuisine at Ölstugan Tullen</div>
+								<h2 class="block--header__text text">
+									<p>Indulge in the essence of Sweden at Ölstugan Tullen, where a vibrant bar experience awaits. Explore a myriad of beer varieties paired with an expansive range of authentic Swedish dishes. With three pubs serving a tempting lunch menu from Monday to Friday and numerous establishments offering À la carte options seven days a week, our culinary haven invites you to savor the best of Swedish hospitality. 
+									</p>	
+									<p>Immerse yourself in the flavors of Ölstugan Tullen, where each visit promises a delightful journey through the heart of Swedish cuisine.</p>
+								</h2>
+								<a href="#" class="block--header__button button">Read more</a>
+						</div>
+						<div class="beer__image">
+							<img src="@img/beer/1.jpg" alt="img">
+						</div>
+					</div>
+				</section>
+				<section class="lunch">
+					<div class="lunch__container">
+						<h2 class="lunch__title">Daily lunch Monday to Friday</h2>
+						<div class="lunch__items">
+							<div class="lunch__item item--lunch">
+								<div class="item--lunch__image">
+									<img src="@img/lunch/1.jpg" alt="image">
+								</div>
+								<h3 class="item--lunch__title">
+									Ölstugan Tullen Lejonet
+								</h3>
+								<div class="item--lunch__info">
+									<div class="item--lunch__location">
+										<img src="@img/lunch/location.svg" alt="location">
+										Friggagatan 27, 416 64 Göteborg, Sweden</div>
+									<a href="tel:+46763130596" class="item--lunch__tel">
+										<img src="@img/lunch/tel.svg" alt="phone"> 
+										+46 76 313 05 96</a>
+									<div class="item--lunch__calendar">
+										<img src="@img/lunch/calendar.svg" alt="calendar">
+										16:00 – 01:00</div>
+								</div>
+
+								<button class="item--lunch__arrow">
+									<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+								</button>
+							</div>
+							<div class="lunch__item item--lunch">
+								<div class="item--lunch__image">
+									<img src="@img/lunch/2.jpg" alt="image">
+								</div>
+								<h3 class="item--lunch__title">
+									Ölstugan Tullen Kville
+								</h3>
+								<div class="item--lunch__info">
+									<div class="item--lunch__location">
+										<img src="@img/lunch/location.svg" alt="location">
+										Herkulesgatan 3A, 417 01 Göteborg, Sweden</div>
+									<a href="tel:+4631165616" class="item--lunch__tel">
+										<img src="@img/lunch/tel.svg" alt="phone"> 
+										+46 31 16 56 16</a>
+									<div class="item--lunch__calendar">
+										<img src="@img/lunch/calendar.svg" alt="calendar">
+										16:00 – 01:00</div>
+								</div>
+
+								<button class="item--lunch__arrow">
+									<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+								</button>
+							</div>
+							<div class="lunch__item item--lunch">
+								<div class="item--lunch__image">
+									<img src="@img/lunch/3.jpg" alt="image">
+								</div>
+								<h3 class="item--lunch__title">
+									Ölstugan Tullen Gamlestaden
+								</h3>
+								<div class="item--lunch__info">
+									<div class="item--lunch__location">
+										<img src="@img/lunch/location.svg" alt="location">
+										Treriksgatan 1, 415 05 Göteborg, Sweden</div>
+									<a href="tel:+46763087810" class="item--lunch__tel">
+										<img src="@img/lunch/tel.svg" alt="phone"> 
+										+46 76 308 78 10</a>
+									<div class="item--lunch__calendar">
+										<img src="@img/lunch/calendar.svg" alt="calendar">
+										16:00 – 01:00</div>
+								</div>
+
+								<button class="item--lunch__arrow">
+									<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+								</button>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<section class="carte">
+					<div class="carte__container">
+						<h2 class="carte__title">À la carte menu 7 days a week</h2>
+						<div class="carte__body">
+							<div class="carte__slider swiper">
+								<div class="carte__wrapper swiper-wrapper">
+									<div class="carte__slide slide-carte swiper-slide">
+										<div class="slide-carte__image">
+											<img src="@img/carte/1.jpg" alt="image">
+										</div>
+										<h3 class="slide-carte__title">
+											Ölstugan Tullen Gamlestaden
+										</h3>
+										<div class="slide-carte__info">
+											<div class="slide-carte__location">
+												<img src="@img/lunch/location.svg" alt="location">
+												Treriksgatan 1, 415 05 Göteborg, Sweden</div>
+											<a href="tel:+46763087810" class="slide-carte__tel">
+												<img src="@img/lunch/tel.svg" alt="phone"> 
+												+46 76 308 78 10</a>
+											<div class="slide-carte__calendar">
+												<img src="@img/lunch/calendar.svg" alt="calendar">
+												16:00 – 01:00</div>
+										</div>
+		
+										<button class="slide-carte__arrow">
+											<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+										</button>
+									</div>
+									<div class="carte__slide slide-carte swiper-slide">
+										<div class="slide-carte__image">
+											<img src="@img/carte/2.jpg" alt="image">
+										</div>
+										<h3 class="slide-carte__title">
+											Ölstugan Tullen Gamlestaden
+										</h3>
+										<div class="slide-carte__info">
+											<div class="slide-carte__location">
+												<img src="@img/lunch/location.svg" alt="location">
+												Treriksgatan 1, 415 05 Göteborg, Sweden</div>
+											<a href="tel:+46763087810" class="slide-carte__tel">
+												<img src="@img/lunch/tel.svg" alt="phone"> 
+												+46 76 308 78 10</a>
+											<div class="slide-carte__calendar">
+												<img src="@img/lunch/calendar.svg" alt="calendar">
+												16:00 – 01:00</div>
+										</div>
+		
+										<button class="slide-carte__arrow">
+											<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+										</button>
+									</div>
+									<div class="carte__slide slide-carte swiper-slide">
+										<div class="slide-carte__image">
+											<img src="@img/carte/3.jpg" alt="image">
+										</div>
+										<h3 class="slide-carte__title">
+											Ölstugan Tullen Gamlestaden
+										</h3>
+										<div class="slide-carte__info">
+											<div class="slide-carte__location">
+												<img src="@img/lunch/location.svg" alt="location">
+												Treriksgatan 1, 415 05 Göteborg, Sweden</div>
+											<a href="tel:+46763087810" class="slide-carte__tel">
+												<img src="@img/lunch/tel.svg" alt="phone"> 
+												+46 76 308 78 10</a>
+											<div class="slide-carte__calendar">
+												<img src="@img/lunch/calendar.svg" alt="calendar">
+												16:00 – 01:00</div>
+										</div>
+		
+										<button class="slide-carte__arrow">
+											<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+										</button>
+									</div>
+									<div class="carte__slide slide-carte swiper-slide">
+										<div class="slide-carte__image">
+											<img src="@img/lunch/3.jpg" alt="image">
+										</div>
+										<h3 class="slide-carte__title">
+											Ölstugan Tullen Gamlestaden
+										</h3>
+										<div class="slide-carte__info">
+											<div class="slide-carte__location">
+												<img src="@img/lunch/location.svg" alt="location">
+												Treriksgatan 1, 415 05 Göteborg, Sweden</div>
+											<a href="tel:+46763087810" class="slide-carte__tel">
+												<img src="@img/lunch/tel.svg" alt="phone"> 
+												+46 76 308 78 10</a>
+											<div class="slide-carte__calendar">
+												<img src="@img/lunch/calendar.svg" alt="calendar">
+												16:00 – 01:00</div>
+										</div>
+		
+										<button class="slide-carte__arrow">
+											<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+										</button>
+									</div>
+									<div class="carte__slide slide-carte swiper-slide">
+										<div class="slide-carte__image">
+											<img src="@img/lunch/1.jpg" alt="image">
+										</div>
+										<h3 class="slide-carte__title">
+											Ölstugan Tullen Gamlestaden
+										</h3>
+										<div class="slide-carte__info">
+											<div class="slide-carte__location">
+												<img src="@img/lunch/location.svg" alt="location">
+												Treriksgatan 1, 415 05 Göteborg, Sweden</div>
+											<a href="tel:+46763087810" class="slide-carte__tel">
+												<img src="@img/lunch/tel.svg" alt="phone"> 
+												+46 76 308 78 10</a>
+											<div class="slide-carte__calendar">
+												<img src="@img/lunch/calendar.svg" alt="calendar">
+												16:00 – 01:00</div>
+										</div>
+										<button class="slide-carte__arrow">
+											<img src="@img/lunch/arrow_forward.svg" alt="arrow">
+										</button>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="carte-button carte-button-prev swiper-button-prev">
+								<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="1" y="1" width="44" height="44" stroke="#FECC00" stroke-width="2"/>
+									<path d="M19.025 33L17.25 31.225L25.475 23L17.25 14.775L19.025 13L29.025 23L19.025 33Z" fill="#FECC00"/>
+								</svg>
+							</button>
+							<button type="button" class="carte-button carte-button-next swiper-button-next">
+								<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="1" y="1" width="44" height="44" stroke="#FECC00" stroke-width="2"/>
+									<path d="M19.025 33L17.25 31.225L25.475 23L17.25 14.775L19.025 13L29.025 23L19.025 33Z" fill="#FECC00"/>
+								</svg>
+							</button>
+							<div class="carte__bullets"></div>
+						</div>
+					</div>
+
+				</section>
+				<section class="culture">
+					<div class="culture__container">
+						<div class="culture__barmen">
+							<img src="@img/culture/barmen.jpg" alt="barmen">
+						</div>
+						<div class="culture__block--header block--header">
+							<div class="block--header__title">Сulture passed down through generations</div>
+							<h2 class="block--header__text text">
+								<p>Ölstugan Tullen opened its first pub at the street Andra Långgatan, today there are seven Ölstugan Tullen pubs around Gothenburg. When Ölstugan opened at the street Andra Långgatan in 2010, it took its name and inspiration from an old drinking establishment located in the area in the late 19th century.
+								</p>	
+								<p>The new Ölstugen concept was a huge success and today there are seven Tullen pubs around Gothenburg. They all exclusively sell Swedish beer, and serve traditional Swedish food. You’ll find plenty of Gothenburg breweries represented here.</p>
+							</h2>
+							<a href="#" class="block--header__button button">Read more</a>
+						</div> 
+						<div class="culture__achievment">
+							<div class="culture__item item--culture">
+								<div class="item--culture__number">
+									140
+								</div>
+								<div class="item--culture__text">
+									Years of successful operation of a bar network.
+								</div>
+							</div>
+							<div class="culture__item item--culture">
+								<div class="item--culture__number">
+									20
+								</div>
+								<div class="item--culture__text">
+									Pubs are open in various cities in Sweden.
+								</div>
+							</div>
+							<div class="culture__item item--culture">
+								<div class="item--culture__number">
+									300
+								</div>
+								<div class="item--culture__text">
+									Various types of beer you can find in our assortment.
+								</div>
+							</div>
+							<div class="culture__item item--culture">
+								<div class="item--culture__number">
+									25
+								</div>
+								<div class="item--culture__text">
+									Awards from beer critics and restaurant associations
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pubs">
+					<div data-da=".pubs__container, 991.98" id="map" class="pubs__maps"></div>
+					<div class="pubs__container">
+						<div class="pubs__location">
+							<div class="pubs__block--header block--header">
+								<div class="block--header__title">More than 20 pubs across Sweden</div>
+							</div>
+
+							<select name="form[]" data-class-modif="form">
+								<option value="Göteborg" selected>Göteborg</option>
+								<option value="Stockholm">Stockholm</option>
+								<option value="Norrköping">Norrköping</option>
+							</select>
+							<div class="pubs__bars" id="bars-container">
+									<!-- <p>Будь ласка, оберіть місто для відображення доступних барів.</p> -->
+							</div>
+						</div>
+						<!-- <div  id="map" class="pubs__maps"></div> -->
+					</div>
+
+				</section>
+				<section class="news">
+					<div class="news__container">
+						<div class="news__main">
+							<div class="news__block--header header--block">
+								<div class="block--header__title">News & events</div>
+							</div>
+							<div class="news__image">
+								<img src="@img/news/1.jpg" alt="pub">
+							</div>
+							<div class="news__body">
+								<div class="news__info">
+									<div class="news__date">12.04.2023</div>
+									<button class="news__button button button_small">Events</button>
+								</div>
+								<div class="news__title">
+									Exclusive beer tastings at <br>Ölstugan Tullen: unveiling new flavors
+								</div>
+								<div class="news__descr">
+									Join us at Ölstugan Tullen for an exclusive beer tasting experience like no other! Be the first to savor our latest brews and discover exciting new flavors, all in a welcoming atmosphere.
+								</div>
+							</div>
+						</div>
+						<div class="news__events">
+							<div class="news__text">
+								All news
+							</div>
+							<div class="news__items">
+								<div class="news__item item--news">
+									<div class="item--news__image">
+										<img src="@img/news/2.jpg" alt="pubs">
+									</div>
+									<div class="item--news__info">
+										<div class="item--news__date">12.04.2023</div>
+										<div class="item--news__button button button_small">Events</div>
+									</div>
+									<div class="item--news__title">Ölstugan Tullen: a hidden gem in Sweden's bar scene</div>
+								</div>
+								<div class="news__item item--news">
+									<div class="item--news__image">
+										<img src="@img/news/3.jpg" alt="pubs">
+									</div>
+									<div class="item--news__info">
+										<div class="item--news__date">12.04.2023</div>
+										<div class="item--news__button button button_small">Events</div>
+									</div>
+									<div class="item--news__title">Ölstugan Tullen: a hidden gem in Sweden's bar scene</div>
+								</div>
+								<div class="news__item item--news">
+									<div class="item--news__image">
+										<img src="@img/news/4.jpg" alt="pubs">
+									</div>
+									<div class="item--news__info">
+										<div class="item--news__date">12.04.2023</div>
+										<div class="item--news__button button button_small">Events</div>
+									</div>
+									<div class="item--news__title">Ölstugan Tullen: a hidden gem in Sweden's bar scene</div>
+								</div>
+								<div class="news__item item--news">
+									<div class="item--news__image">
+										<img src="@img/news/5.jpg" alt="pubs">
+									</div>
+									<div class="item--news__info">
+										<div class="item--news__date">12.04.2023</div>
+										<div class="item--news__button button button_small">Events</div>
+									</div>
+									<div class="item--news__title">Ölstugan Tullen: a hidden gem in Sweden's bar scene</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="instagram">
+					<div class="instagram__container">
+						<div class="instagram__title">
+							<div class="instagram__block--header block--header">
+								<div class="block--header__title">Our Instagram</div>
+							</div>
+							<div class="instagram__text">All news</div>
+						</div>
+						<div class="instagram__items">
+						</div>
+						<div  class="instagram__button">
+							<button  class="instagram__loadMore button" type="button"> Load more</button>
+						</div>
+					</div>
+				<!-- <input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="" class="input"> -->
+				</section>
+				<section class="contact">
+					<div class="contact__container">
+						<div class="contact__image">
+							<img src="@img/contact/contactMan.png" alt="man">
+						</div>
+						<div class="contact__info">
+							<div class="contact__block--header block--header">
+								<div class="block--header__title">Contact us</div>
+							</div>
+							<form action="files/sendmail/sendmail.php" method="POST" class="contact__form">
+								<input data-required type="text" name="form[email]" data-error="Error" placeholder="Name" class="contact__input input">
+								<input data-required type="tel" name="form[email]" data-error="Error" placeholder="Phone" class="contact__input input">
+								<input data-required type="email" name="form[email]" data-error="Error" placeholder="E-mail address" class="contact__input input">
+								<textarea name="text" class="contact__textarea" placeholder="Message"></textarea>
+								<div class="contact__checkbox">
+									<input type="checkbox" id="checkbox" name="vehicle3">
+									<label for="checkbox">I agree of the processing of personal data</label>
+								</div>
+								<button type="submit" class="button button-big">Send</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<!-- <div class="input-container">
+					<input type="text" id="input" placeholder="Приклад placeholder">
+					<span class="placeholder-after" id="placeholder-after"></span>
+				</div> -->
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

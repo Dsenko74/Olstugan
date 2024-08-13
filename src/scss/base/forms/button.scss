@@ -1,0 +1,41 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: toRem(15) toRem(32);
+	justify-content: center;
+	align-items: center;
+	background-color: $bgYellow;
+	font-weight: 700;
+	color: #000;
+	border: toRem(1) solid $bgYellow;
+	@media (any-hover: hover){
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&-big {
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: transparent;
+				color: #fff;	
+			}
+		}
+	}
+
+	&--fw {
+		width: 100%;
+	}
+	&_small {
+		max-width: toRem(51);
+		padding: toRem(4) toRem(8);
+		font-size: toRem(10);
+		//line-height: 120%; /* 18/10 */
+		font-weight: 500;
+		background-color: #fff;
+		border-radius: toRem(36);
+		border: toRem(1) solid #006aa7;
+	}
+
+}
